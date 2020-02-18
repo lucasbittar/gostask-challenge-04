@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* DEFAULT */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  font-size: 16px;
+}
+
+/* COMMON */
+.timeline-wrapper,
+.post-comments {
+  margin: 0;
+  padding: 0;
+}
+.post-item,
+.comment-item {
+  list-style: none;
+}
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* HEADER */
+header {
+  background-color: #4a90e2;
+  padding: 0.5em;
+}
+
+header > nav {
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav img {
+  height: 24px;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  transition: all 300ms ease-out;
+}
+
+.profile-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-button i {
+  margin-left: 8px;
+}
+
+/* TIMELINE */
+.timeline-wrapper {
+  width: 100%;
+  max-width: 700px;
+  margin: 2em auto;
+}
+
+/* POST */
+.post-item {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.133916);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.post-header {
+  display: flex;
+  align-items: center;
+}
+.author-info {
+  margin-left: 15px;
+}
+.post-timestamp {
+  font-size: 0.687rem;
+  color: #9a9a9a;
+}
+.author-name {
+  font-size: 0.875rem;
+  color: #4a4a4a;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.post-comments {
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  border-top: 1px solid #eee;
+}
+.post-content {
+  margin: 1.5em 0 1.5em 0;
+  font-size: 0.875em;
+  line-height: 1.6;
+}
+
+/* COMMENTS */
+.comment-content {
+  font-size: 0.875em;
+  background: #eeeeee;
+  padding: 1em;
+  border-radius: 4px;
+  line-height: 1.6;
+  margin-left: 1em;
+}
+.comment-item {
+  display: flex;
+  margin-bottom: 1em;
+}
+.comment-item:last-child {
+  margin-bottom: 0;
+}
